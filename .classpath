@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/aspectjrt-1.8.5.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jcl-over-slf4j-1.7.10.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/joda-convert-1.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/joda-time-2.3.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/slf4j-api-1.7.6.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/slf4j-jdk14-1.7.6.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-aop-4.0.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-beans-4.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-context-4.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-core-4.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-data-commons-1.10.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-data-jpa-1.8.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-expression-4.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-jdbc-4.0.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-orm-4.0.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-tx-4.0.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-web-4.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-webmvc-4.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Applications/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.9.22/appengine-java-sdk-1.9.22/lib/tools/jsp/repackaged-appengine-jakarta-jstl-1.1.2.jar"/>
+	<classpathentry kind="lib" path="/Applications/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.9.22/appengine-java-sdk-1.9.22/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/thymeleaf-spring4-2.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/thymeleaf-2.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/javassist-3.16.1-GA.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/ognl-3.0.8.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/unbescape-1.1.0.RELEASE.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
