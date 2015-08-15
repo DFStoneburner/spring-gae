@@ -27,8 +27,6 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-tx-4.0.9.RELEASE.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-web-4.1.7.RELEASE.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-webmvc-4.1.7.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/Applications/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.9.22/appengine-java-sdk-1.9.22/lib/tools/jsp/repackaged-appengine-jakarta-jstl-1.1.2.jar"/>
-	<classpathentry kind="lib" path="/Applications/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.9.22/appengine-java-sdk-1.9.22/lib/tools/jsp/repackaged-appengine-jakarta-standard-1.1.2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/thymeleaf-spring4-2.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/thymeleaf-2.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/javassist-3.16.1-GA.jar"/>
