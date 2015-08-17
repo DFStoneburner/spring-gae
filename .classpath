@@ -33,5 +33,11 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/javassist-3.16.1-GA.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/ognl-3.0.8.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/unbescape-1.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-security-acl-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-security-config-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-security-core-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-security-taglibs-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-security-web-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jsr250-api-1.0.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

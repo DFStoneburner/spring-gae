@@ -40,15 +40,22 @@
 					<li><a href="/greeting">Greetings</a></li>
 				</ul>
 			</div>
+			<div class="nav navbar-nav navbar-right">
+				<form th:action="@{/logout}" method="post">
+					<input type="submit" value="Sign Out" />
+				</form>
+			</div>
 		</div>
 	</nav>
-	
+
 	<div class="container">
-	<div class="jumbotron">
-		<h1>Spring Demo</h1>
-		<p>This is a basic Spring MVC demo hosted on Google App Engine. Code used will soon be available on Github.</p>
-		<p>The site is split into a couple examples that demonstrate the basics of Spring code.</p>
-	</div>	
+		<div class="jumbotron">
+			<h1>Spring Demo</h1>
+			<p>This is a basic Spring MVC demo hosted on Google App Engine.
+				Code used will soon be available on Github.</p>
+			<p>The site is split into a couple examples that demonstrate the
+				basics of Spring code.</p>
+		</div>
 	</div>
 
 
