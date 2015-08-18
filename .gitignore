@@ -18,4 +18,5 @@ war/WEB-INF/lib/appengine-api-labs.jar
 war/WEB-INF/lib/appengine-endpoints-deps.jar
 war/WEB-INF/lib/appengine-endpoints.jar
 war/WEB-INF/lib/appengine-jsr107cache-1.9.25.jar
-war/WEB-INF/appengine-generated/datastore-indexes-auto.xml
+war/WEB-INF/appengine-generated/
+war/WEB-INF/classes/
