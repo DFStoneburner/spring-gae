@@ -13,7 +13,10 @@
 		<intercept-url pattern="/" access="permitAll" />
 		<intercept-url pattern="/accessdenied" access="permitAll" />
 		<intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
-		<logout logout-success-url="/" />
+		<form-login login-page="/login" default-target-url="/greeting"
+			authentication-failure-url="/login?error" username-parameter="username"
+			password-parameter="password" always-use-default-target="false"/>
+		<logout logout-success-url="/login?logout" />
 	</http>
 
 	<authentication-manager alias="authenticationManager">

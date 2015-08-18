@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Login</title>
+
+<link th:replace="header :: bootstrap-css" />
+<link th:replace="header :: app-css" />
+</head>
+<body>
+	<nav th:replace="header :: navbar"></nav>
+
+	<div class="container">
+
+		<h1>Login page</h1>
+		<form th:action="@{/login}" method="post" class="form-signin">
+			<div th:if="${param.error}" class="alert alert-warning alert-dismissible" role="alert">
+				<button type="button" class="close" data-dismiss="alert"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				Invalid	username and password.
+			</div>
+			<div th:if="${param.logout}" class="alert alert-success alert-dismissible" role="alert">
+				<button type="button" class="close" data-dismiss="alert"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				You
+				have been logged out.
+			</div>
+			<label for="username" class="sr-only">Username</label> <input
+				type="text" id="username" name="username" class="form-control" /> <br />
+			<label for="password" class="sr-only">Password</label> <input
+				type="password" id="password" name="password" class="form-control" />
+			<br /> <input type="submit" value="Log in"
+				class="btn btn-lg btn-primary btn-block" />
+		</form>
+
+	</div>
+
+	<div th:replace="footer :: scripts"></div>
+</body>
+</html>
