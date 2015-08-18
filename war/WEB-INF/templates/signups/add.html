@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang=en>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,49 +15,51 @@
 
 <body>
 	<nav th:replace="header :: navbar"></nav>
+	<div class="containter-fluid">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<form action="#" th:action="@{/signup/add}" th:object="${signup}"
+					method="post">
+					<fieldset>
+						<div class="form-group">
+							<label for="firstName" class="control-label">First Name</label> <input
+								type="text" id="firstName" name="firstName" class="form-control"
+								th:value="*{firstName}" th:errorclass="fieldError" />
 
-	<div class="containter content" >
-		<form action="#" th:action="@{/signup/add}"
-			th:object="${signup}" method="post">
-			<fieldset>
-				<div class="form-group">
-					<label for="firstName" class="control-label">First
-						Name</label>
-					<input type="text" id="firstName" name="firstName" class="form-control"
-						th:value="*{firstName}" th:errorclass="fieldError" />
-				
-					<p th:if="${#fields.hasErrors('firstName')}"
-						th:errors="*{firstName}">Incorrect First Name</p>
-				</div>
+							<p th:if="${#fields.hasErrors('firstName')}"
+								th:errors="*{firstName}">Incorrect First Name</p>
+						</div>
 
-				<div class="form-group">
-					<label for="lastName">Last
-						Name</label>
-					<input type="text" id="lastName" name="lastName" class="form-control"
-						th:value="*{lastName}" th:errorclass="fieldError" />
-					<p th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Incorrect
-						Last Name</p>
-				</div>
+						<div class="form-group">
+							<label for="lastName">Last Name</label> <input type="text"
+								id="lastName" name="lastName" class="form-control"
+								th:value="*{lastName}" th:errorclass="fieldError" />
+							<p th:if="${#fields.hasErrors('lastName')}"
+								th:errors="*{lastName}">Incorrect Last Name</p>
+						</div>
 
-				<div class="form-group">
-					<label for="email" class="control-label">Email</label>
-					<input type="text" id="email" name="email" th:value="*{email}" class="form-control"
-						th:errorclass="fieldError" />
-					<p th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Incorrect
-						Email</p>
-				</div>
+						<div class="form-group">
+							<label for="email" class="control-label">Email</label> <input
+								type="text" id="email" name="email" th:value="*{email}"
+								class="form-control" th:errorclass="fieldError" />
+							<p th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Incorrect
+								Email</p>
+						</div>
 
-				<div class="form-group">
-					<label for="signUpDate" class="control-label">Sign
-						Up Date</label>
-						<input type="datetime" id="signUpDate" name="signUpDate" class="form-control"
-							th:value="*{{signUpDate}}" th:errorclass="fieldError" />
-					<p th:if="${#fields.hasErrors('signUpDate')}"
-						th:errors="*{signUpDate}">Incorrect Sign Up Date</p>
-				</div>
-				<input type="submit" id="save" name="save" class="btn btn-primary btn-lg active" />
-			</fieldset>
-		</form>
+						<div class="form-group">
+							<label for="signUpDate" class="control-label">Sign Up
+								Date</label> <input type="datetime" id="signUpDate" name="signUpDate"
+								class="form-control" th:value="*{{signUpDate}}"
+								th:errorclass="fieldError" />
+							<p th:if="${#fields.hasErrors('signUpDate')}"
+								th:errors="*{signUpDate}">Incorrect Sign Up Date</p>
+						</div>
+						<input type="submit" id="save" name="save"
+							class="btn btn-primary btn-lg active" />
+					</fieldset>
+				</form>
+			</div>
+		</div>
 	</div>
 	<div th:replace="footer :: scripts"></div>
 </body>

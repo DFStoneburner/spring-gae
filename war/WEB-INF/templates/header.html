@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang=en>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,8 +41,12 @@
 						</ul></li>
 					<li><a href="/greeting">Greetings</a></li>
 				</ul>
-				<form th:action="@{/logout}" method="post">
-					<input class="navbar-right btn btn-default navbar-btn" type="submit" value="Sign Out" />
+
+				<form sec:authorize="isAuthenticated()" th:action="@{/logout}" method="post">
+					<label for="mySubmit"
+						class="navbar-right btn btn-default navbar-btn"><i
+						class="glyphicon glyphicon-log-out"></i> Sign Out</label> <input
+						id="mySubmit" type="submit" value="Sign Out" class="hidden" />
 				</form>
 			</div>
 		</div>
